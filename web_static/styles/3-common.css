@@ -1,0 +1,17 @@
+/*
+ * === Global style ===
+ */
+
+/* Global body style */
+body {
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    color: #484848;
+    /* Text color */
+    font-size: 14px;
+    /* Base font size */
+    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* Font family */
+}

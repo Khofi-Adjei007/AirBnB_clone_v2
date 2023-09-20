@@ -1,0 +1,120 @@
+/*
+ * === Filters Class Styles ===
+ */
+
+/* Styles for .filters container */
+.filters {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: inline-block;
+    height: 70px;
+    width: 100%;
+}
+
+/* Styles for the Search button */
+.filters button {
+    background: #ff5a5f;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    float: right;
+    font-size: 18px;
+    height: 48px;
+    margin: 12px 30px;
+    width: 20%;
+}
+
+/* Styles for Search button on hover */
+.filters button:hover {
+    background-color: rgba(255, 90, 95, .9);
+}
+
+/* Styles for .locations and .amenities containers */
+.filters .locations,
+.filters .amenities {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    width: 25%;
+}
+
+/* Styles for border on .locations container */
+.filters .locations {
+    border-right: 1px solid #ddd;
+}
+
+/* Styles for hover opacity on .locations and .amenities containers */
+.filters .locations:hover,
+.filters .amenities:hover {
+    background-color: #fafafa;
+}
+
+/* Styles for the popover menu on .locations and .amenities */
+.filters .popover {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: none;
+    max-height: 300px;
+    overflow-y: scroll;
+    position: absolute;
+    width: 100%;
+}
+
+/* Styles for displaying the popover menu on hover */
+.filters .locations:hover .popover,
+.filters .amenities:hover .popover {
+    display: block;
+}
+
+/* Styles for the list within .locations */
+.filters .locations ul {
+    margin: 12px auto 12px 30px;
+}
+
+/* Styles for margin on list elements within .locations */
+.filters .locations li {
+    margin-bottom: 6px;
+}
+
+/* Styles for margin on list elements within .amenities */
+.filters .amenities li {
+    margin: 12px auto 12px 30px;
+}
+
+/*
+   * === Filters Header Styles ===
+   */
+
+/* Styles for box sizing of headers */
+.filters h2,
+.filters h3,
+.filters h4 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Styles for h2 headers within .filters */
+.filters h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 12px auto 0 30px;
+}
+
+/* Styles for h3 headers within .filters */
+.filters h3 {
+    font-size: 1.17em;
+    font-weight: 600;
+    height: 50%;
+    padding: 15.5px 0 0 30px;
+}
+
+/* Styles for h4 headers within .filters */
+.filters h4 {
+    font-size: 14px;
+    font-weight: 400;
+    height: 50%;
+    padding: 4.5px 0 12px 30px;
+}

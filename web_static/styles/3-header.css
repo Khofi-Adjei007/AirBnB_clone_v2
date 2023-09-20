@@ -1,0 +1,15 @@
+/*
+ * === Header style ===
+ */
+
+/* Style for the header */
+header {
+    background: #fff url('../images/logo.png') 20px center no-repeat;
+    /* Background image with positioning */
+    border-bottom: 1px solid #ccc;
+    /* Bottom border with color */
+    height: 70px;
+    /* Height of the header */
+    width: 100%;
+    /* Full width */
+}

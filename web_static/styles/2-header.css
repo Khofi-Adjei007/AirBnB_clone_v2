@@ -1,0 +1,13 @@
+/*
+ * === Header style ===
+ */
+
+/* Header style */
+header {
+    background-color: #f00;
+    /* Background color set to red (#f00) */
+    height: 70px;
+    /* Height of the header */
+    width: 100%;
+    /* Full width of the viewport */
+}
