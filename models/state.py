@@ -1,35 +1,35 @@
 #!/usr/bin/python3
-"""
-This module defines the State class.
-"""
+""" holds class State"""
+import models
+from models.base_model import BaseModel, Base
+from os import getenv
+import sqlalchemy
 from sqlalchemy import Column, String
 from sqlalchemy.orm import relationship
-from models.base_model import BaseModel, Base
 
 
 class State(BaseModel, Base):
+    """Representation of state """
+    if getenv('HBNB_TYPE_STORAGE') == 'db':
+        __tablename__ = 'states'
+        name = Column(String(128),
+                      nullable=False)
+        cities = relationship("City", cascade="all, delete",
+                              backref="states")
+    else:
+        name = ""
 
-    """
-    Represents a state in a MySQL database.
+    def __init__(self, *args, **kwargs):
+        """initializes state"""
+        super().__init__(*args, **kwargs)
 
-    Inherits from SQLAlchemy Base and links to the MySQL table 'states'.
-
-    Attributes:
-        __tablename__ (str): The name of the MySQL table for storing States.
-        name (str): The name of the State.
-        cities (list): A list of related City objects.
-    """
-
-    __tablename__ = "states"
-    name = Column(String(128), nullable=False)
-    cities = relationship("City",  backref="state", cascade="delete")
-
-    if getenv("HBNB_TYPE_STORAGE") != "db":
+    if getenv('HBNB_TYPE_STORAGE') != 'db':
         @property
         def cities(self):
-            """Get a list of all related City objects."""
-            city_list = []
-            for city in list(models.storage.all(City).values()):
+            """fs getter attribute that returns City instances"""
+            values_city = models.storage.all("City").values()
+            list_city = []
+            for city in values_city:
                 if city.state_id == self.id:
-                    city_list.append(city)
-            return city_list
+                    list_city.append(city)
+            return list_city

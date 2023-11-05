@@ -1,25 +1,13 @@
-/* Global Styling */
 body {
-    /* Text color and font styles */
-    color: #484848;
-    font: 14px Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin:0px;
+	padding:0px;
+
+	color: #484848;
+	font-size: 14px;
+	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-/* Prevent horizontal scrolling */
-html,
-body {
-    width: 100%;
-    overflow-x: hidden;
-}
-
-/* Container styling */
 .container {
-    /* Centered container with maximum width */
-    margin: 30px auto;
     max-width: 1000px;
-}
-
-/* Strong text style */
-strong {
-    font-weight: bold;
+    margin: 30px auto;
 }

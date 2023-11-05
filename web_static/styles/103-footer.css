@@ -1,12 +1,10 @@
-/* Footer Styling */
 footer {
-    /* Center content vertically and horizontally */
-    align-items: center;
-    display: flex;
-    /* White background with a top border */
-    background-color: #fff;
-    border-top: 1px solid #ccc;
-    /* Fixed height and full width */
-    height: 60px;
-    width: 100%;
+	position: fixed;
+	bottom: 0;
+	background-color: white;
+	height: 60px;
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+	border-top: 1px solid #CCCCCC;
 }

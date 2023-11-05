@@ -1,25 +1,10 @@
-/*
- * === Footer style ===
- */
-
-/* Style for the footer */
 footer {
-    align-items: center;
-    /* Align content vertically at the center */
-    background-color: #fff;
-    /* Background color for the footer */
-    border-top: 1px solid #ccc;
-    /* Top border with color */
-    bottom: 0;
-    /* Position at the bottom of the viewport */
-    display: flex;
-    /* Use flexbox for layout */
-    height: 60px;
-    /* Height of the footer */
-    justify-content: center;
-    /* Center content horizontally */
-    position: absolute;
-    /* Positioning type as absolute */
-    width: 100%;
-    /* Full width */
+	position: fixed;
+	bottom: 0;
+	background-color: white;
+	height: 60px;
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+	border-top: 1px solid #CCCCCC;
 }
